@@ -1,0 +1,36 @@
+{
+  "name": "technonia-applink",
+  "version": "1.0.0",
+  "description": "Technonia App Link Redirection Service",
+  "homepage": "https://github.com/KimYoonSoo/Technonia-AppLink#readme",
+  "author": "chris@technonia.com",
+  "license": "Copyright 2021. Technonia all rights reserved",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KimYoonSoo/Technonia-AppLink.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KimYoonSoo/Technonia-AppLink/issues"
+  },
+  "dependencies": {
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "express-error-handler": "^1.1.0",
+    "http": "0.0.1-security",
+    "path": "^0.12.7",
+    "server-static": "^2.0.5",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.2"
+  },
+  "scripts": {
+    "win-dev": "set NODE_ENV=devlopment && set DEBUG=* && node applink_start.js",
+    "win-prod": "set NODE_ENV=production && pm2 start applink_start.js -i 2 --name applink",
+    "linux-dev": "export NODE_ENV=devlopment && export DEBUG=* && node applink_start.js",
+    "linux-prod": "export NODE_ENV=production && pm2 start applink_start.js -i 2 --name applink",
+    "status": "pm2 status applink",
+    "reload": "pm2 reload applink",
+    "stop": "pm2 stop applink",
+    "delete": "pm2 delete applink",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
