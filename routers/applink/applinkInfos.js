@@ -3,13 +3,11 @@
 *****************************************************************/
 
 const applinkAndroid = {
-    "com.technonia.android" : "http://www.technonia.com",
-    "alcochem_uvatesterbt" : "https://play.google.com/store/apps/details?id=com.alcochem.uvatesterbt"
+    "android" : "http://www.technonia.com",
 };
 
 const applinkApple = {
-    "com.technonia.apple" : "http://www.technonia.com",
-    "alcochem_uvatesterbt" : "https://apps.apple.com/us/app/smart-uv-checker-bt/id1549162924"
+    "apple" : "http://www.technonia.com",
 };
   
 module.exports = {
