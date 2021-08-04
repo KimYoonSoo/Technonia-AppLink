@@ -1,6 +1,6 @@
 #!/bin/sh
-ANDROID_ENDPOINT="http://localhost:8080/applink/android"
-APPLE_ENDPOINT="http://localhost:8080/applink/apple"
+ANDROID_ENDPOINT="http://localhost:7777/applink/android"
+APPLE_ENDPOINT="http://localhost:7777/applink/apple"
 
 API_METHOD="GET"
 
