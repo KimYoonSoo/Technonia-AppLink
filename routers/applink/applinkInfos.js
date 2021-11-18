@@ -3,11 +3,11 @@
 *****************************************************************/
 
 const applinkAndroid = {
-    "android" : "http://www.technonia.com",
+    "android" : "https://www.google.com",
 };
 
 const applinkApple = {
-    "apple" : "http://www.technonia.com",
+    "apple" : "http://www.apple.com",
 };
   
 module.exports = {
